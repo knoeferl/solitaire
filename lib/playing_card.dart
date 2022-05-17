@@ -30,6 +30,19 @@ enum CardColor {
 }
 
 Widget suitToImage(CardSuit cardSuit) {
+
+  switch (cardSuit) {
+    case CardSuit.hearts:
+      return const FittedBox(child: Text("♥", style: TextStyle(color: Colors.red),));
+    case CardSuit.diamonds:
+      return const FittedBox(child: Text("♦", style: TextStyle(color: Colors.red),));
+    case CardSuit.clubs:
+      return const FittedBox(child: Text("♣", style: TextStyle(color: Colors.black),));
+    case CardSuit.spades:
+      return const FittedBox(child: Text("♠", style: TextStyle(color: Colors.black),));
+  }
+
+
   switch (cardSuit) {
     case CardSuit.hearts:
       return FittedBox(child: SvgPicture.asset('images/Bay_herz.svg'));

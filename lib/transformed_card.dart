@@ -85,7 +85,7 @@ class _TransformedCardState extends State<TransformedCard> {
                     child: Text(
                       _cardTypeToString(),
                       style: const TextStyle(
-                        fontSize: 16.0,
+                        fontSize: 13.0,
                       ),
                     ),
                   ),
